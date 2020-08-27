@@ -1,3 +1,74 @@
+<a name="6.4.0"></a>
+# [6.4.0](https://github.com/jeduan/cordova-plugin-facebook4/releases/tag/v6.4.0)
+
+## Fix
+
+* **Android:** add a check to test if the access token is expired in order to fetch a new one if that would be the case ([#853](https://github.com/jeduan/cordova-plugin-facebook4/pull/853))
+
+<a name="6.3.0"></a>
+# [6.3.0](https://github.com/jeduan/cordova-plugin-facebook4/releases/tag/v6.3.0)
+
+## Features
+
+* **iOS:** Updating to CocoaPods CDN ([#848](https://github.com/jeduan/cordova-plugin-facebook4/pull/848))
+* **iOS:** Update Facebook iOS SDK v5.15.0 ([Facebook iOS SDK changelog](https://github.com/facebook/facebook-objc-sdk/blob/master/CHANGELOG.md) | Released: January 21 2020)
+* **Android:** Set per default usage of Facebook Android SDK v5.13.0 ([Facebook Android SDK changelog](https://github.com/facebook/facebook-android-sdk/blob/master/CHANGELOG.md) | Released: December 11 2019)
+
+Note: I have upgraded the default Facebook Android SDK to v5.13.0 and not to its last available version, v5.15.0, as this most recent version contains a bug (see [facebook-android-sdk#655](https://github.com/facebook/facebook-android-sdk/issues/665)).
+
+## Docs
+
+* **sample repo**: If you are looking to test the plugin, would like to reproduce a bug or build issues, there is now a demo project for such purpose: [cordova-plugin-facebook4-lab](https://github.com/peterpeterparker/cordova-plugin-facebook4-lab)
+
+<a name="6.2.0"></a>
+# [6.2.0](https://github.com/jeduan/cordova-plugin-facebook4/releases/tag/v6.2.0)
+
+## Features
+
+* **iOS:** Update Facebook iOS SDK v5.7.0 ([Facebook iOS SDK changelog](https://github.com/facebook/facebook-objc-sdk/blob/master/CHANGELOG.md) | Released: September 30 2019)
+* **Android:** Set per default usage of Facebook Android SDK v5.5.2 ([Facebook Android SDK changelog](https://github.com/facebook/facebook-android-sdk/blob/master/CHANGELOG.md) | Released: October 4 2019)
+
+## Docs
+
+* Document two known errors related to Cocoapods, Facebook iOS SDK and their related solutions
+
+<a name="6.1.0"></a>
+# [6.1.0](https://github.com/jeduan/cordova-plugin-facebook4/releases/tag/v6.1.0)
+
+## Features
+
+* **iOS:** Update Facebook iOS SDK v5.6.0 ([Facebook iOS SDK changelog](https://github.com/facebook/facebook-objc-sdk/blob/master/CHANGELOG.md) | Released: July 15 2019)
+* **Android:** Set per default usage of Facebook Android SDK v5.5.1 ([Facebook Android SDK changelog](https://github.com/facebook/facebook-android-sdk/blob/master/CHANGELOG.md) | Released: July 29 2019)
+
+Thx [Francesco Tonini](https://github.com/francescotonini) for the PR 👍
+
+<a name="6.0.0"></a>
+# [6.0.0](https://github.com/jeduan/cordova-plugin-facebook4/releases/tag/v6.0.0)
+
+## Breaking change
+
+* **iOS:** use the [CocoaPods dependency manager](https://cocoapods.org) in order to satisfy the iOS Facebook SDK library dependencies ([#639](https://github.com/jeduan/cordova-plugin-facebook4/issues/639))
+
+### Notes
+
+See [iOS documentation](https://github.com/jeduan/cordova-plugin-facebook4/tree/master/docs/ios) for some notes about installation with Cocoapods.
+
+## Features
+
+* **iOS:** Update Facebook iOS SDK v5.2.3 ([Facebook iOS SDK changelog](https://github.com/facebook/facebook-objc-sdk/blob/master/CHANGELOG.md) | Released: July 15 2019)
+* **Android:** Set per default usage of Facebook Android SDK v5.2.0 ([Facebook Android SDK changelog](https://github.com/facebook/facebook-android-sdk/blob/master/CHANGELOG.md) | Released: July 29 2019)
+
+<a name="5.0.0"></a>
+# [5.0.0](https://github.com/jeduan/cordova-plugin-facebook4/releases/tag/v5.0.0)
+
+## Features
+
+* **iOS:** Update Facebook iOS SDK v5.0.2 ([#751](https://github.com/jeduan/cordova-plugin-facebook4/pull/751) | [Facebook iOS SDK changelog](https://github.com/facebook/facebook-objc-sdk/blob/master/CHANGELOG.md) | Released: June 5 2019)
+* **Android:** Set per default usage of Facebook Android SDK v5.0.20 ([#751](https://github.com/jeduan/cordova-plugin-facebook4/pull/751) | [Facebook Android SDK changelog](https://github.com/facebook/facebook-android-sdk/blob/master/CHANGELOG.md) | Released: June 7 2019)
+
+### Kudos
+Thx [Guy Lando](https://github.com/guylando) for your amazing work and PR 👍
+
 <a name="4.2.1"></a>
 # [4.2.1](https://github.com/jeduan/cordova-plugin-facebook4/releases/tag/v4.2.1)
 

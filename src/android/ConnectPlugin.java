@@ -227,13 +227,13 @@ public class ConnectPlugin extends CordovaPlugin {
     public void onResume(boolean multitasking) {
         super.onResume(multitasking);
         // Developers can observe how frequently users activate their app by logging an app activation event.
-        AppEventsLogger.activateApp(cordova.getActivity());
+        AppEventsLogger.activateApp(cordova.getActivity().getApplication());
     }
 
     @Override
     public void onPause(boolean multitasking) {
         super.onPause(multitasking);
-        AppEventsLogger.deactivateApp(cordova.getActivity());
+        AppEventsLogger.deactivateApp(cordova.getActivity().getApplication());
     }
 
     @Override
@@ -305,7 +305,7 @@ public class ConnectPlugin extends CordovaPlugin {
             cordova.getThreadPool().execute(new Runnable() {
                 @Override
                 public void run() {
-                    AppEventsLogger.activateApp(cordova.getActivity());
+                    AppEventsLogger.activateApp(cordova.getActivity().getApplication());
                 }
             });
 
@@ -746,7 +746,12 @@ public class ConnectPlugin extends CordovaPlugin {
 
     // Simple active session check
     private boolean hasAccessToken() {
-        return AccessToken.getCurrentAccessToken() != null;
+        AccessToken token = AccessToken.getCurrentAccessToken();
+
+		if (token == null)
+			return false;
+
+		return !token.isExpired();
     }
 
     private void handleError(FacebookException exception, CallbackContext context) {
