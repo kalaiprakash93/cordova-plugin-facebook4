@@ -160,7 +160,7 @@
           </array>
         </config-file>
 
-        <!-- Facebook SDK -->
+        <!-- Facebook SDK -check -->
         <podspec>
             <config>
                 <source url="https://cdn.cocoapods.org/"/>
